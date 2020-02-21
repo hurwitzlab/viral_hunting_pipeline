@@ -1,0 +1,3 @@
+TypeError in line 11 of /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Pipelines/viral_hunting_pipeline/scripts/Snakefile:
+shellcmd() takes 2 positional arguments but 3 were given
+  File "/rsgrps/bhurwitz/alise/my_data/Nostoc_project/Pipelines/viral_hunting_pipeline/scripts/Snakefile", line 11, in <module>

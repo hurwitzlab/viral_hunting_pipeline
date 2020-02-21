@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 28
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	megahit
+	1
+
+[Fri Feb 21 13:05:59 2020]
+rule megahit:
+    input: /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Lichen_metagenomes/fastQC/QC_sequences/S10_R1_QC.fq, /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Lichen_metagenomes/fastQC/QC_sequences/S10_R2_QC.fq
+    output: test/final.contigs.fa
+    jobid: 0
+
+[Fri Feb 21 13:05:59 2020]
+Error in rule megahit:
+    jobid: 0
+    output: test/final.contigs.fa
+    shell:
+        rm -r test megahit -1 /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Lichen_metagenomes/fastQC/QC_sequences/S10_R1_QC.fq -2 /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Lichen_metagenomes/fastQC/QC_sequences/S10_R2_QC.fq -o test
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Pipelines/viral_hunting_pipeline/scripts/.snakemake/log/2020-02-21T130557.659480.snakemake.log

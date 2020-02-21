@@ -1,6 +1,13 @@
+configfile: "config.yaml"
+
 rule megahit:
     input:
+        p1 = config["P1"],
+        p2 = config["P2"]
     output:
-        "test_output.txt"
+        "test/final.contigs.fa"
     shell:
-        "megahit -h >> test_output.txt"
+        """
+        rm -r test
+        megahit -1 {input.p1} -2 {input.p2} -o test
+        """

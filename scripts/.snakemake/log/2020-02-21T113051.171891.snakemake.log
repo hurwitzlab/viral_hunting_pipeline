@@ -1,0 +1,19 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 28
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	megahit
+	1
+
+[Fri Feb 21 11:30:56 2020]
+rule megahit:
+    input: /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Lichen_metagenomes/fastQC/QC_sequences/S10_R1_QC.fq, /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Lichen_metagenomes/fastQC/QC_sequences/S10_R2_QC.fq
+    output: test_output.txt
+    jobid: 0
+
+[Fri Feb 21 11:31:02 2020]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Pipelines/viral_hunting_pipeline/scripts/.snakemake/log/2020-02-21T113051.171891.snakemake.log
