@@ -1,0 +1,6 @@
+rule megahit:
+    input:
+    output:
+        "test_output.txt"
+    shell:
+        "megahit -h >> test_output.txt"

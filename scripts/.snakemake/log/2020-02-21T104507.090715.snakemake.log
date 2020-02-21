@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /rsgrps/bhurwitz/alise/my_data/Nostoc_project/Pipelines/viral_hunting_pipeline/scripts/Snakefile:
+Missing input files for rule megahit:
+test.txt
